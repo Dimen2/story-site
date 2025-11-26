@@ -117,7 +117,7 @@ export default function MainPage() {
             <div key={index}>
               <button className="faq-question" onClick={() => toggleAnswer(index)}>
                 {item.question}
-                <span className={`arrow ${openIndex === index ? 'open' : ''}`}>X</span>
+                <span className={`arrow ${openIndex === index ? 'open' : ''}`}>?</span>
               </button>
 
               {openIndex === index && (

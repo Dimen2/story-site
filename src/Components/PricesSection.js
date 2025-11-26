@@ -1,11 +1,11 @@
 import React from 'react';
 import { Button } from './ui/button';
-import photo from './photo6.png'; 
-import photo1 from './photo7.png'; 
-import photo2 from './photo8.png'; 
-import photo3 from './photo9.png'; 
-import photo4 from './photo10.png'; 
-import photo5 from './photo11.png'; 
+import photo from './photo12.jpg'; 
+import photo1 from './photo13.jpg'; 
+import photo2 from './photo14.jpg'; 
+import photo3 from './photo15.jpg'; 
+import photo4 from './photo16.jpg'; 
+import photo5 from './photo17.jpg'; 
 
 const PricesSection = () => {
   const products = [
