@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from './ui/button';
 import { Menu, X } from 'lucide-react';
+import logo from './logo.png';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -15,32 +16,27 @@ const Header = () => {
 
   return (
     <header className="header">
-
       <div className="header-content">
-       <div className="hero-image-glow2"></div>
+        <div className="hero-image-glow2"></div>
 
-        {/* Logo */}
-        <div className="logo">
-          <h1>КУХОННІ ДОШКИ <span className="logo-accent">R-SHIFT</span></h1>
+        {/* Logo with image */}
+        <div className="logoHeader"> 
+          <img 
+            src={logo} 
+            alt="Logo" 
+            style={{ height: '100px', width: '100px', objectFit: 'contain' }} 
+          />
+          <h1>
+            <span className="logo-accent">Stone Studio Store</span>
+          </h1>
         </div>
 
         {/* Desktop Navigation */}
         <nav className="nav">
-          <button onClick={() => scrollToSection('prices')}>
-             КАТАЛОГ
-          </button>
-          <button onClick={() => scrollToSection('advantages')}>
-            ПЕРЕВАГИ
-          </button>
-          <button onClick={() => scrollToSection('reviews')}>
-            ВІДГУКИ
-          </button>
-          {/* <button onClick={() => scrollToSection('question')}>
-            Питання та відповіді
-          </button> */}
-          <button onClick={() => scrollToSection('contacts')}>
-            КОНТАКТ
-          </button>
+          <button onClick={() => scrollToSection('prices')}>КАТАЛОГ</button>
+          <button onClick={() => scrollToSection('advantages')}>ПЕРЕВАГИ</button>
+          <button onClick={() => scrollToSection('reviews')}>ВІДГУКИ</button>
+          <button onClick={() => scrollToSection('contacts')}>КОНТАКТ</button>
         </nav>
 
         {/* Call Button */}
@@ -51,7 +47,7 @@ const Header = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <button 
+        <button
           className="mobile-menu-btn"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
@@ -62,27 +58,13 @@ const Header = () => {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="mobile-menu open">
-          <button onClick={() => scrollToSection('advantages')}>
-            Перевага
-          </button>
-          <button onClick={() => scrollToSection('reviews')}>
-            Відгуки
-          </button>
-          <button onClick={() => scrollToSection('prices')}>
-            Вартість
-          </button>
-          {/* <button onClick={() => scrollToSection('question')}>
-            Питання та відповіді
-          </button> */}
-          <button onClick={() => scrollToSection('contacts')}>
-           Контакти
-          </button>
-          <Button
-  onClick={() => scrollToSection('contacts')}
-  className="header-call-button"
->
-  Подзвонити
-</Button>
+          <button onClick={() => scrollToSection('advantages')}>Перевага</button>
+          <button onClick={() => scrollToSection('reviews')}>Відгуки</button>
+          <button onClick={() => scrollToSection('prices')}>Вартість</button>
+          <button onClick={() => scrollToSection('contacts')}>Контакти</button>
+          <Button onClick={() => scrollToSection('contacts')} className="header-call-button">
+            Подзвонити
+          </Button>
         </div>
       )}
     </header>

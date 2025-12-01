@@ -91,3 +91,11 @@
   z-index: 1;
   pointer-events: none;
 }
+
+.hero-title-accent2 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+     background: #ca0000;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 12px;
+}

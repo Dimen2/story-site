@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from './ui/button';
-import photo from './photo2.png'; 
+import photo from './67.png'; 
 
 const HeroSection = () => {
   const heroFeatures = [
@@ -30,16 +30,13 @@ const HeroSection = () => {
         <div className="hero-content">
           
           <div className="hero-left">
-            <div className="hero-badge">
-              Корисний подарунок до Нового року
-            </div>
 
             <h1 className="hero-title">
-              <span className="hero-title-accent">R-SHIFT</span>
+              <span className="hero-title-accent">Stone Studio Store</span>
             </h1>
 
             <h2 className="hero-subtitle">
-              Кухня починається з дошки. Оберіть ту, яка створена надихати
+              КУХНЯ ПОЧИНАЄТЬСЯ З ДОШКИ. ОБЕРІТЬ ТУ, ЯКА СТВОРЕНА НАДІХАТИ
             </h2>
 
             <ul className="hero-features">
@@ -65,6 +62,9 @@ const HeroSection = () => {
               >
                 У ЧОМУ КАЙФ?
               </Button>
+            </div>
+            <div className="hero-badge">
+              Корисний подарунок до Нового року
             </div>
 
             <p className="hero-note">

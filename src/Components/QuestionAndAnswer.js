@@ -68,9 +68,9 @@ export default function MainPage() {
         <div className="container">
           <div className="hero-content">
             <div className="hero-left">
-              <div className="hero-badge">СТИЛЬНЫЙ ПОДАРОК НА НОВЫЙ ГОД</div>
+              {/* <div className="hero-badge">СТИЛЬНЫЙ ПОДАРОК НА НОВЫЙ ГОД</div> */}
               <h1 className="hero-title">
-                <span className="hero-title-accent">R-SHIFT</span>
+                <span className="hero-title-accent2">Хто ми?</span>
               </h1>
               <h2 className="hero-subtitle">Совершенные кухонные доски из камня</h2>
 
@@ -84,17 +84,17 @@ export default function MainPage() {
               </ul>
 
               <div className="hero-buttons">
-                <Button onClick={() => scrollToSection('question')} className="hero-btn-primary">
+                {/* <Button onClick={() => scrollToSection('question')} className="hero-btn-primary">
                   ХОЧУ ЗАКАЗАТЬ
-                </Button>
+                </Button> */}
                 <Button onClick={() => scrollToSection('question')} variant="outline" className="hero-btn-outline">
-                  В ЧЁМ КАЙФ?
+                  МАЄТЕ ПИТАННЯ?
                 </Button>
               </div>
 
-              <p className="hero-note">
+              {/* <p className="hero-note">
                 *Эксклюзивное предложение распродажи. 40% скидка действует до 30.12
-              </p>
+              </p> */}
             </div>
 
             <div className="hero-right">

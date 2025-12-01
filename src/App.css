@@ -71,6 +71,10 @@ code {
   /* Забираємо font-size: 50px, оскільки він не потрібен для SVG */
 }
 
+.logoHeader{
+  display: flex;
+  gap: 10px;
+}
 
 .moblael-container {
   position: fixed;
@@ -548,12 +552,19 @@ img {
   font-family: 'Inter', sans-serif;
   font-weight: 100;
   font-stretch: 90%;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
 }
 
 .logo-accent {
   font-weight: 900;
 }
+
+.logoHeader h1 {
+  margin: 0;
+  padding: 0;
+  line-height: 1;        /* важный момент! */
+}
+
 
 .nav {
   display: flex;
@@ -707,6 +718,7 @@ img {
 }
 
 .hero-badge {
+  position: absolute;
   background: #2c2c2c;
   color: white;
   padding: 12px 24px;
@@ -714,32 +726,41 @@ img {
   font-size: 14px;
   font-weight: 600;
   display: inline-block;
-  margin-bottom: 32px;
+  margin-bottom: -6px;
   font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
+  font-weight: 100;
+  bottom: 47px;
+  right: 332px;
 }
 
 .hero-title {
-  font-size: 71px;
   font-weight: bold;
   margin-bottom: 16px;
+  font-size: 15px;
 }
 
 .hero-title-accent {
-  color: #ca0000;
+  color: #ff0000;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-family: 'Inter', sans-serif;
+    font-weight: 100;
+  font-size: 46px;
 }
 
 .hero-subtitle {
-  font-size: 33px;
+  font-size: 25px;
   font-weight: bold;
   margin-bottom: 32px;
   line-height: 1.2;
+  font-family: Arial, sans-serif;
+  font-weight: 100;
 }
 
 .hero-features {
   list-style: none;
   margin-bottom: 32px;
+  font-family: 'Inter', sans-serif;
+    font-weight: 100;
 }
 
 .hero-features li {
@@ -764,8 +785,9 @@ img {
 .hero-btn-primary {
   background: #ca0000;
   color: white;
-  padding: 20px 40px;
-  font-size: 20px;
+  width: 214px;
+    height: 66px;
+  font-size: 15px;
   font-weight: bold;
   border-radius: 12px;
   border: none;
@@ -781,8 +803,9 @@ img {
 .hero-btn-outline {
   background: transparent;
   color: white;
-  padding: 20px 40px;
-  font-size: 20px;
+  width: 214px;
+  height: 66px;
+  font-size: 15px;
   font-weight: bold;
   border-radius: 12px;
   border: 2px solid white;
@@ -808,7 +831,7 @@ img {
 
 .discount-badge {
   position: absolute;
-  top: -18px;
+  top: 57px;
   right: -34px;
   background: white;
   color: red;
@@ -915,6 +938,13 @@ img {
   right: 0;
   bottom: 0;
   background: linear-gradient(-45deg, #000000, #1a1a1a, #2d2d2d, #000000);
+}
+
+.hero-image2{
+  max-width: 700px;
+  height: auto;
+  display: block;
+  margin-bottom: 98px;
 }
 
 .advantages-blur-circle-1 {

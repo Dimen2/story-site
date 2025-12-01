@@ -141,7 +141,7 @@ const PricesSection = () => {
                   onClick={() => handleOrder(product.name)}
                   className="order-button"
                 >
-                  ЗАКАЗАТЬ {product.color === 'white' ? 'БЕЛЫЙ' : product.color === 'blanch' ? 'БЛАНШ' : 'ПОМНТ'}
+                  ЗАКАЗАТЬф
                 </Button>
               </div>
             </div>
